@@ -34,46 +34,47 @@ body{
 
 
 /* Notification feed styling */
-.notification-container {
+@keyframes scroll-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .notification-container {
     height: 450px;
     overflow: hidden;
     background-color: #f8f9fa;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    margin-top : 28px;
+    margin-top: 28px;
     border: 1px solid #ccc;
-}
-
-.notification-list {
+    position: relative;
+  }
+  
+  .notification-list {
     list-style: none;
     padding: 0;
-   
-    animation: scroll-up 8s linear normal;
-}
-
-.notification-list li {
+    margin: 0;
+    animation: scroll-up 20s linear infinite; /* slower, continuous loop */
+    display: inline-block;
+  }
+  
+  .notification-list li {
     padding: 10px;
     background-color: white;
     border-bottom: 1px solid #ddd;
-    
-}
-.notification-list li p {
+    width: 100%;
+  }
+  
+  .notification-list li p {
     margin-top: 10px;
     color: rgb(20, 80, 145);
-} 
-
-
-@keyframes scroll-up {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-
+  }
+  
 .iframe-container {
     width: 100%;
    /* Adjust the max-width as needed */
