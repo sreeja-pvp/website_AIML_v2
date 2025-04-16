@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result Analysis PVP20</title>
+    <title>Certifications</title>
 
     <!-- Bootstrap 5.3 CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -18,50 +18,24 @@
     <link rel="stylesheet" href="../css/quickLinks.css">
 
     <style>
-        body {
-            font-family: "Helvetica";
-
-
-        }
-
-        #results table {
-            border-color: black;
-            margin-bottom: 5%;
-
-
-        }
-
-        #results thead {
+        #certifications thead {
             background-color: rgb(24, 68, 107) !important;
             color: white;
         }
 
-        #results thead th {
+        #certifications thead th {
             background-color: rgb(24, 68, 107) !important;
             color: white !important;
-            font-size: medium;
-            font-family: "Baker Signet BT";
+            font-size: 12px;
         }
 
-        #results td {
-            font-size: 14px;
-            color: black;
-            font-family: "Helvetica";
+        #certifications td {
+            font-size: small;
             background-color: rgba(131, 178, 219, 0.271);
         }
 
-        #results .title {
-            font-weight: bold;
-            color: rgb(24, 68, 107);
-            font-family: "Baker Signet BT";
+        #certifications .section-title {
 
-        }
-
-        #results .section-title {
-            font-size: medium;
-            font-weight: bold;
-            font-family: "Baker Signet BT";
-            color: rgb(24, 68, 107);
             font-weight: bold;
             color: #0056b3;
             border-bottom: 3px solid #0056b3;
@@ -71,13 +45,68 @@
 
         }
 
-        #results a {
+        #certifications .section-title {
+            font-size: small;
+            font-weight: bold;
+            color: rgb(24, 68, 107);
+        }
+
+
+
+        #certifications a {
             color: #0d6efd;
             text-decoration: underline;
         }
 
-        #results a:hover {
+        #certifications a:hover {
             color: #0a58ca;
+        }
+
+        #certifications table {
+            font-size: 14px;
+            /* Reduce text size for better fit */
+        }
+
+        #certifications .table-responsive {
+            max-width: 80%;
+            /* Adjust table width */
+            margin: auto;
+            /* Center the table */
+        }
+
+        #certifications th:nth-child(4),
+        td:nth-child(4) {
+            width: 10%;
+            /* Adjust as needed */
+            text-align: center;
+        }
+
+        #certifications th:nth-child(5),
+        td:nth-child(5) {
+            width: 10%;
+            /* Adjust as needed */
+            text-align: center;
+        }
+
+        #certifications th:nth-child(2),
+        td:nth-child(2) {
+            width: 20%;
+            /* Adjust as needed */
+            text-align: center;
+        }
+
+        #certifications th:nth-child(3),
+        td:nth-child(3) {
+            width: 20%;
+            /* Adjust as needed */
+            text-align: center;
+        }
+
+        #certifications th:nth-child(1),
+        td:nth-child(1) {
+            width: 10%;
+            /* Adjust as needed */
+            text-align: center;
         }
     </style>
 </head>
@@ -140,7 +169,7 @@
                                     </ul>
                                 </li>
                                 <!--<li><a class="dropdown-item" href="#">PO's PEO's PSO's</a></li>-->
-                                <li><a class="dropdown-item" href="../pages/BOS.html">BOS</a></li>
+                                <li><a class="dropdown-item" href="BOS.html">BOS</a></li>
 
                             </ul>
                         </li>
@@ -196,7 +225,8 @@
                                     <a class="dropdown-item dropdown-toggle" href="#">Question Papers</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="Questionpapers_pvp23.html">PVP23</a></li>
-                                        <li><a class="dropdown-item" href="QuestionPapers_pvp20.html">PVP20</a></li>
+                                        <li><a class="dropdown-item" href="pages/QuestionPapers_pvp20.html">PVP20</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="MentoringList.html">Mentoring List</a></li>
@@ -224,39 +254,9 @@
                             </ul>
                         </li>
                         <!-- Certifications -->
-                        <li class="nav-item ml-3 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Certifications
-                            </a>
-                            <ul class="dropdown-menu">
-
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">PVP23</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Certifications_pvp23_IIyr.html">II Year</a></li>
-                                        <li><a class="dropdown-item" href="#">III Year</a></li>
-                                        <li><a class="dropdown-item" href="#">IV Year</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href="Certifications_pvp20.html">PVP20</a></li>
-
-                            </ul>
-                        </li>
-                        <!-- Results Analysis -->
-                        <li class="nav-item ml-3 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Results Analysis
-                            </a>
-                            <ul class="dropdown-menu">
-
-                                <li><a class="dropdown-item" href="Results_pvp23.html">PVP23</a></li>
-                                <li><a class="dropdown-item" href="Results_pvp20.html">PVP20</a></li>
-
-
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Certifications.html">Certifications</a></li>
+                        <!-- Results Analysis-->
+                        <li class="nav-item"><a class="nav-link" href="ResultAnalysis.html">ResultAnalysis</a></li>
 
                         <!-- Media -->
                         <li class="nav-item dropdown">
@@ -280,59 +280,116 @@
         </nav>
     </section>
 
-    <!-- Results Analysis-->
-    <div class="container mt-4" id="results">
+       <!--Certifications-->
+
+       <div class="container mt-4" id="certifications">
         <div class="table-responsive">
+            <h4 class="section-title">Academic Year : 2024-2025Y </h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark aling-middle">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name of the Certification Course </th>
+                        <th>Organized by</th>
+                        <th>Participant Count</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1.</td>
+                    <td>Introduction To Machine Learning</td>
+                    <td>Swayam NPTEL</td>
+                    <td>47</td>
+                    <td><a href="../pdfs/Certifications/PVP20/2024_25/Machine Learning Course III-AI&ML.pdf" target="_self">View
+                            Details</a> </td>
+                    </tr>                  
+                   
+                    <tr>
+                        <td>2.</td>
+                        <td>Python 3.4.3</td>
+                        <td>Spoken-Tutorial</td>
+                        <td>68</td>
+                        <td><a href="../pdfs/Certifications/PVP20/2024_25/Python Course III-AI&ML.pdf" target="_self">View
+                                Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>LINUX</td>
+                        <td>Spoken-Tutorial</td>
+                        <td>57</td>
+                        <td><a href="../pdfs/Certifications/PVP20/2024_25/Linux Course III-AI&ML.pdf" target="_self">View
+                                Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Programming in Java</td>
+                        <td>Swayam NPTEL</td>                    
+                        <td>41</td>
+                        <td><a href="../pdfs/Certifications/PVP23/2024_25/Java_II.pdf" target="_self">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Design and Analysis of Algorithms</td>
+                        <td>Swayam NPTEL</td>                    
+                        <td>19</td>
+                        <td><a href="../pdfs/Certifications/PVP23/2024_25/DAA_II.pdf" target="_blank">View Details</a></td>
+                    </tr>
 
-            <h4 class="text-center mb-4 title">PVP20 REGULATIONS RESULT ANALYSIS</h4>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="container mt-5">
-
-                <!-- November 2024 Results
-                <h3 class="section-title">NOVEMBER 2024</h3> -->
-                <table class="table table-bordered  text-center">
-                    <thead class="table-dark">
-                        <tr>
-                            
-                            
-                            <th>Year</th>
-                            <th>Semester</th>
-                            <th>Pass Percentage (%)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            
-                           
-                            <td>III  </td>
-                            <td>I</td>                            
-                            <td>91.43</td>
-                        </tr>
-
-
-                        <tr>
-                           
-                            
-                            <td rowspan="2" style="vertical-align : middle;text-align:center;">II </td>
-                            <td> II</td>                            
-                            <td>92.96</td>
-                        </tr>
+        <div class="table-responsive">
+            <h4 class="section-title">Academic Year : 2023-2024Y </h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark aling-middle">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name of the Certification Course </th>
+                        <th>Organized by</th>
+                        <th>Participant Count</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1.</td>
+                   
+                    <td>Data Base Management System</td>
+                    <td>Swayam NPTEL</td>
+                    <td>32</td>
+                    <td><a href="../pdfs/Certifications/PVP20/2023-24/DBMS(23-24).pdf" target="_self">View
+                            Details</a> </td>
+                    </tr>
 
 
-                        <tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>Design and Analysis of Algorithms </td>
+                        <td>Swayam NPTEL</td>
+                        <td>10</td>
+                        <td><a href="../pdfs/Certifications/PVP20/2023-24/DAA(23-24).pdf"
+                                target="_self">View Details</a> </td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Java</td>
+                        <td>Spoken Spoken-Tutorial</td>
+                        <td>68</td>
+                        <td><a href="../pdfs/Certifications/PVP20/2023-24/Java Course II-AI&ML(23-24).pdf"
+                                target="_self">View Details</a> </td>
+                    </tr>
 
-                           
-                            
-                            <td>I</td>
-                            <td>87.32</td>
-                        </tr>
+                   
 
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="footer">
+
+
+   
+    <!--footer -->
+    <div class="footer" style="max-width:100%;">
         Quick Links
     </div>
     <div class="container mt-4">
@@ -401,6 +458,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
