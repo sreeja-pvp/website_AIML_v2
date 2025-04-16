@@ -49,8 +49,8 @@ body{
 .notification-list {
     list-style: none;
     padding: 0;
-    margin: 30px;
-   /* animation: scroll-up 8s linear normal;*/
+   
+    animation: scroll-up 8s linear normal;
 }
 
 .notification-list li {
@@ -59,8 +59,9 @@ body{
     border-bottom: 1px solid #ddd;
     
 }
-.notification-list li a {
-    color: black;
+.notification-list li p {
+    margin-top: 10px;
+    color: rgb(20, 80, 145);
 } 
 
 
