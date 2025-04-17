@@ -2,7 +2,7 @@
 #aboutNav {
     margin-left: 20px; /* Adjust as needed */
     margin-top : 20px;
-    font-family: "Montserrat", sans-serif;
+     font-family: "Helvetica";;
     color: black; /* Default font color */
    
 }
@@ -78,7 +78,9 @@
     color: #1e2082;
     text-align: center;
     padding-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
+    
+    width: max-content;
 }
 
 /* List & Text Alignment */
@@ -106,6 +108,8 @@
     color: #1e2082;
     font-weight: bold;
     font-size: 18px;
+    margin-left: 0px;
+    font-family: "Helvetica";
 }
 
 /* Read More Button */
@@ -119,7 +123,7 @@
     font-size: 1em;
     display: block;
     margin-top: 10px;
-    margin-left: 20px; /* Set left margin */
+    margin-left: 0px; /* Set left margin */
     transition: color 0.3s ease;
 }
 
@@ -135,5 +139,5 @@
 /* Read More Content */
 #aboutNav #moreContent {
     display: none; /* Initially hidden */
-    margin-left: 20px; /* Apply margin */
+    margin-left: 0px; /* Apply margin */
 }
